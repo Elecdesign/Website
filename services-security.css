@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    /* overflow-x: hidden; */
+}
+body{
+    overflow-x: hidden;
+}
+.service-hero{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Images/Service-images/cctv-hero-image.jpg");
+    /* height: 600px; */
+    aspect-ratio: 16/5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 32px;
+}
+.service-hero h1{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+
+}
+.service-hero p{
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+    color: var(--grey-100);
+
+}
+.service-hero span{
+    color: var(--primary-600);
+}
+@media (max-width: 1200px){
+    .service-hero h1{
+        font-size: 28px;
+    }
+    .service-hero p{
+        font-size: 14px;
+    }
+    .service-hero{
+        height: 400px;
+        background-position: center;
+    }
+    
+}
+@media (max-width: 900px){
+    .service-hero h1{
+        font-size: 24px;
+    }
+    .service-hero p{
+        font-size: 14px;
+        width: 90%;
+    }
+    .service-hero{
+        height: 30vh;
+        background-position: center;
+    }
+    
+}
+@media (max-width: 480px){
+    .service-hero{
+        height: 50vh;
+        background-position: center;
+        padding: 24px;
+    }
+    .service-hero p{
+        width: 100%;
+    }
+}
+/*----------------------------------------------*/
+.image-info-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.with-bg-color{
+    background-color: var(--grey-50);
+}
+.image-info-content{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    gap: 80px;
+    padding: 40px;
+    
+}
+.image{
+    height: 400px;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.image-1{
+    background: url("Images/Service-images/fense-security.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-2{
+    background: url("Images/Service-images/security-alarms.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-3{
+    background: url("Images/Service-images/access-control-systems.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-4{
+    background: url("Images/Service-images/cctv-surveillance.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.information{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+}
+.title-description-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title-description-container > h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.title-description-container > p{
+    font-size: 18px;
+    font-weight: normal;
+    color: #6B6B6B;
+    line-height: 160%;
+}
+/*-----------------------------------------------------*/
+.inside-image-title-description-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: end;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 32px 32px;
+    display: none;
+}
+.inside-image-title-description-container > h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    /* text-align: center; */
+}
+.inside-image-title-description-container > p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #f0f0f0;
+    line-height: 160%;
+    /* text-align: center; */
+}
+/*-----------------------------------------------------*/
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.list-container h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.list-container ul li{
+    font-size: 18px;
+    font-weight: normal;
+    color: #6B6B6B;
+    line-height: 120%;
+}
+.list-container ul {
+    list-style: none; 
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list-container ul li {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    padding-left: 0; 
+}
+
+.list-container ul li::before {
+    content: url("Images/Other-icons/check-circle.svg"); 
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+@media (max-width: 1440px){
+    .image-info-content{
+        width: 100vw;
+        padding: 80px;
+    }
+}
+@media (max-width: 1111px){
+    .image-info-content{
+        flex-direction: column;
+        gap: 32px;
+        padding: 40px;
+    }
+    .info-image-content{
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 100%;
+        height: 400px;
+    }
+    .information{
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        gap: 40px;
+    }
+    .title-description-container{
+        width: 100%;
+
+    }
+    .title-description-container > h2{
+        font-size: 24px;
+        font-weight: 700;
+        color: #1d1d1d;
+    }
+    .title-description-container > p{
+        font-size: 16px;
+        font-weight: normal;
+        color: #6B6B6B;
+        line-height: 160%;
+    }
+    .list-container{
+        width: 100%;
+    }
+}
+@media (max-width: 786px){
+    .image-info-content{
+        gap: 24px;
+        padding: 32px;
+    }
+    .information{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 24px;
+    }
+    .inside-image-title-description-container{
+        padding: 28px;
+    }
+    .title-description-container{
+        display: none;
+    }
+    .inside-image-title-description-container{
+        display: flex;
+    }
+    .image-1{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/Service-images/fense-security.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .image-2{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/Service-images/security-alarms.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .image-3{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/Service-images/access-control-systems.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .image-4{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/Service-images/cctv-surveillance.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .list-container h3{
+        font-size: 16px;
+        font-weight: 700;
+        color: #1d1d1d;
+    }
+    .list-container ul li{
+        font-size: 16px;
+        font-weight: normal;
+        color: #6B6B6B;
+        line-height: 120%;
+    }
+}
+@media (max-width: 480px){
+    .image-info-content{
+        gap: 16px;
+        padding: 24px;
+    }
+    .information{
+        padding: 0;
+    }
+    .inside-image-title-description-container{
+        padding: 20px;
+    }
+    .list-container h3{
+        font-size: 14px;
+        font-weight: 700;
+        color: #1d1d1d;
+    }
+    .list-container ul li{
+        font-size: 14px;
+        font-weight: normal;
+        color: #6B6B6B;
+        line-height: 120%;
+    }
+    .inside-image-title-description-container > h2{
+        font-size: 20px;
+    }
+    .inside-image-title-description-container > p{
+        font-size: 14px;
+    }
+}
