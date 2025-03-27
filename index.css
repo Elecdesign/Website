@@ -587,7 +587,7 @@
     }
 
     .service-card button {
-        display: none;
+        /* display: none; */
     }
 
     .s-info h2 {
